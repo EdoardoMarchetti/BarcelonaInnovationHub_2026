@@ -3,7 +3,7 @@ name = "barcelonainnovationhub-2026"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.12,<3.14"
 dependencies = [
     "ipykernel>=7.1.0",
     "jupyter>=1.1.1",
@@ -12,4 +12,10 @@ dependencies = [
     "pandas>=3.0.0",
     "scikit-learn>=1.8.0",
     "skillcorner>=2.6.12",
+    "mplsoccer (>=1.6.1,<2.0.0)",
+    "sentence-transformers (>=5.2.2,<6.0.0)",
 ]
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.14.14"
+
