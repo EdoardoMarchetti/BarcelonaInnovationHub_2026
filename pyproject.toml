@@ -14,6 +14,10 @@ dependencies = [
     "skillcorner>=2.6.12",
     "mplsoccer (>=1.6.1,<2.0.0)",
     "sentence-transformers (>=5.2.2,<6.0.0)",
+    "accelerate (>=1.12.0,<2.0.0)",
+    "torch (>=2.10.0,<3.0.0)",
+    "transformers (>=5.0.0,<6.0.0)",
+    "openai (>=2.16.0,<3.0.0)",
 ]
 
 [tool.poetry.group.dev.dependencies]
