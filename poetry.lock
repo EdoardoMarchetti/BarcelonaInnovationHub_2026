@@ -1385,6 +1385,18 @@ files = [
 tests = ["pytest"]
 
 [[package]]
+name = "highlight-text"
+version = "0.2"
+description = "matplotlib functions to plot text with color highlighted substrings"
+optional = false
+python-versions = ">=3.6"
+groups = ["main"]
+files = [
+    {file = "highlight_text-0.2-py3-none-any.whl", hash = "sha256:fb1333628f500a0ff2c25af757511eb39034c1d19571994821b2e0f76d040f75"},
+    {file = "highlight_text-0.2.tar.gz", hash = "sha256:062d8f648fd474157367e435e37ef5c68cc58b1c8d0b006baab2e7c1c60bdc37"},
+]
+
+[[package]]
 name = "httpcore"
 version = "1.0.9"
 description = "A minimal low-level HTTP client."
@@ -5958,4 +5970,4 @@ propcache = ">=0.2.1"
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12,<3.14"
-content-hash = "058c9968609e8270a7e0dd0f299f394771a1eb1bb2ed664d0a5ec5365fdb29eb"
+content-hash = "679fd817ab9ae6a4379de06de0bb271065d8ca93554f24a7d6fb4c46b0fab18f"
