@@ -1,0 +1,27 @@
+# Contexto de la Fase de Juego
+
+## Información General
+- **Equipo Local**: {{ home_team }}
+- **Equipo Visitante**: {{ away_team }}
+- **Tiempo de Inicio**: {{ mm_ss }}
+- **Duración**: {{ duration }} segundos
+- **Equipo en Posesión**: {{ team_in_posession }}
+- **Zona de Inicio**: {{ start_zone }}
+- **Zona Final**: {{ end_zone }}
+- **Resultado**: {{ outcome }}
+
+## Jugadores en Campo
+
+### {{ home_team }} (Local)
+{% for player in players %}
+{% if player.team == 'Home' %}
+- **{{ player.name }}** (ID: {{ player.id }}){% if player.position %} - Posición: {{ player.position }}{% endif %}
+{% endif %}
+{% endfor %}
+
+### {{ away_team }} (Visitante)
+{% for player in players %}
+{% if player.team == 'Away' %}
+- **{{ player.name }}** (ID: {{ player.id }}){% if player.position %} - Posición: {{ player.position }}{% endif %}
+{% endif %}
+{% endfor %}
